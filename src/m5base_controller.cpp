@@ -10,6 +10,7 @@ MotorControl  motor_control = MotorControl();
 M5baseController::M5baseController() {
     std::string ip;
     n_.param<std::string>("plus_ip", ip, DEF_IP);
+    ROS_INFO("Plus IP: %s", ip.c_str());
 
     strcpy(motor_control.m_ip, ip.c_str());
     sub_ = n_.subscribe("joy", 10, &M5baseController::joyCallback, this);

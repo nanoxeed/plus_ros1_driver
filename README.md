@@ -13,5 +13,5 @@ catkin build
 ## Launch
 
 ```sh
-
+roslaunch plus_ros1_driver joy_control.launch
 ```
