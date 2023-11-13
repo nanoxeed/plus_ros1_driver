@@ -73,7 +73,9 @@ void *threadfunc(void *pdata)
 }
 
 
-MotorControl::MotorControl()
+MotorControl::MotorControl() {}
+
+void MotorControl::start()
 {
     pthread_t th;
 

@@ -10,8 +10,15 @@ git clone https://github.com/neka-nat/plus_ros1_driver.git
 catkin build
 ```
 
+## PS4コントローラを使用する場合
+
+```sh
+sudo apt install bluez
+pip install ds4drv
+```
+
 ## Launch
 
 ```sh
-roslaunch plus_ros1_driver joy_control.launch
+roslaunch plus_ros1_driver joy_control.launch ip:=<plusのIPアドレス>
 ```

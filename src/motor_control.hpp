@@ -11,6 +11,7 @@ public:
     char m_ip[256];
     
     MotorControl();
+    void start();
 
     void drive(int rval, int lval);
 };
