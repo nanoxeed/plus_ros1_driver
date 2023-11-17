@@ -15,6 +15,8 @@ catkin build
 ```sh
 sudo apt install bluez
 pip install ds4drv
+ds4drv
+# PS4コントローラのホームとSHAREを同時押して接続
 ```
 
 ## Launch

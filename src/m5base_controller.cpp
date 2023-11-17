@@ -19,6 +19,6 @@ M5baseController::M5baseController() {
 }
 
 void M5baseController::joyCallback(const sensor_msgs::Joy& joy) {
-    motor_control.drive((int)(joy.axes[2] * 63.0), (int)(joy.axes[1] * 63.0));
-    ROS_INFO("Joy: %d, %d", (int)(joy.axes[2] * 63.0), (int)(joy.axes[1] *63.0));
+    motor_control.drive(-(int)(joy.axes[5] * 63.0), -(int)(joy.axes[1] * 63.0));
+    ROS_INFO("Joy: %d, %d", -(int)(joy.axes[5] * 63.0), -(int)(joy.axes[1] *63.0));
 }
