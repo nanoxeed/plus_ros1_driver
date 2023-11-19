@@ -6,6 +6,7 @@ import time
 rospy.init_node("joy_test", anonymous=True)
 pub = rospy.Publisher("joy", Joy, queue_size=10)
 value = 0.2
+time.sleep(1)
 
 # Forward
 msg = Joy()
@@ -17,7 +18,7 @@ time.sleep(2)
 msg = Joy()
 msg.axes = [0, -value, 0, 0, 0, value]
 pub.publish(msg)
-time.sleep(3)
+time.sleep(3.5)
 
 # Forward
 msg = Joy()
